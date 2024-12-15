@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Header */
+header {
+    background-color: #ffffff;
+    color: #202020;
+    padding: 10px 0;
+}
+
+header .container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header table {
+    width: 100%;
+}
+
+header td {
+    vertical-align: middle;
+}
+
+nav a {
+    color: #202020;
+    margin: 0 5px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background: url('../images/office.png') no-repeat center center/cover;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.8;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 0 0 20px 0;
+}
+
+.hero .order-btn {
+    background-color: #4D5AE5;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.hero .order-btn:hover {
+    background-color: #00278f;
+}
+
+/* Modal Styles */
+.modal-backdrop {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.modal-backdrop.is-open {
+    display: flex;
+    opacity: 1;
+}
+
+.modal {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 100%;
+    position: relative;
+    animation: fadeIn 0.3s ease;
+}
+
+.modal h2 {
+    margin-bottom: 20px;
+}
+
+.modal input, .modal textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.modal button[type="submit"] {
+    background-color: #4D5AE5;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.modal button[type="submit"]:hover {
+    background-color: #00278f;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #aaa;
+}
+
+.close-btn:hover {
+    color: #000;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
